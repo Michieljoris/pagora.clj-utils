@@ -16,7 +16,7 @@
 
 (defn make-subname [url db-name use-ssl]
   (let [utf-encoding true]
-    (cond-> (str url db-name "?zeroDateTimeBehavior=convertToNull")
+    (cond-> (str url db-name "?zeroDateTimeBehavior=convertToNull&serverTimezone=UTC")
       (= (boolean use-ssl) use-ssl) (str "&useSSL=" (if use-ssl "true" "false"))
       utf-encoding (str "&characterEncoding=UTF-8"))))
 

@@ -1,0 +1,3 @@
+#+TITLE: Readme
+
+Various generic util functions used in the fullstack app framework [[https://github.com/Michieljoris/pagora.aum/][aum]].
